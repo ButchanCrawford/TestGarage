@@ -1,0 +1,73 @@
+.find {
+  max-width: 100%;
+  margin: auto;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.heading p {
+  text-align: center;
+}
+
+.text_bg {
+  background: lightblue;
+  height: 30px;
+  max-width: 650px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.text_bg p {
+  font-size: 1.3rem;
+}
+
+.slider {
+  padding: 5rem 0;
+}
+
+.card {
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: -4px 0px 21px -2px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
