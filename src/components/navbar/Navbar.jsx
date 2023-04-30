@@ -7,13 +7,42 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
 
+  const navigate = useNavigate();
+
+  function navItemSelected(event) {
+    event.preventDefault();
+    switch (event.target.id) {
+      case "faq":
+        navigate("/faq");
+        break;
+      case "login":
+        navigate("/login");
+
+        break;
+      case "signup":
+        navigate("/signup");
+
+        break;
+      case "logo":
+        navigate("/");
+
+        break;
+      default:
+    }
+  }
+
   return (
     <header className={styles.navbar}>
-      <div className={styles.logo_container}>
+      <div
+        className={styles.logo_container}
+        onClick={navItemSelected}
+        id="logo"
+      >
         <img
           src="https://tinyurl.com/2r4p8xdr"
           alt="logo"
@@ -29,13 +58,19 @@ function Navbar() {
           }
         >
           <li>
-            <a href="/">Learn more</a>
+            <a href="/" onClick={navItemSelected} id="faq">
+              Learn more
+            </a>
           </li>
           <li>
-            <a href="/">Log in</a>
+            <a href="/" onClick={navItemSelected} id="login">
+              Log in
+            </a>
           </li>
           <li>
-            <a href="/">Sign up</a>
+            <a href="/" onClick={navItemSelected} id="signup">
+              Sign up
+            </a>
           </li>
           <li>
             <AiOutlineSearch size={25} className={styles.icons} />

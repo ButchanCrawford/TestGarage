@@ -1,0 +1,94 @@
+.login_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: lightblue;
+}
+
+.login {
+  padding: 4rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0.1%;
+  /* gap: 1rem; */
+  /* padding: 1rem; */
+}
+
+.left img {
+  max-width: 700px;
+}
+
+.left {
+  border: 0.5px solid blueviolet;
+}
+
+.right {
+  border: 0.5px solid blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right p:nth-child(2) {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.btn_container {
+  display: flex;
+}
+
+.forgot {
+  color: blueviolet;
+  cursor: pointer;
+}
+.btn_container button {
+  background-color: blueviolet;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+}
+
+.btn_container button:hover {
+  background-color: rgb(106, 34, 173);
+  transition: background-color 1s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.btn_container button:nth-child(1) {
+  margin-right: 10px;
+}
+
+.right input {
+  border: 0.5px solid rgb(27, 192, 204);
+  border-radius: 5px;
+  width: 250px;
+  height: 45px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+}
+
+.right input:nth-child(2) {
+  margin-bottom: 89px;
+}
+
+@media screen and (max-width: 920px) {
+  .login {
+    display: flex;
+  }
+  .login .left {
+    display: none;
+    border: none;
+  }
+
+  .login .right {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

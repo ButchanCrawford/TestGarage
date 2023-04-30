@@ -115,7 +115,7 @@ function Faq() {
       </div>
       <div className={styles.answers}>
         <p>
-          Not seing your question? <span>submit your question.</span>
+          Not seing your question? <span>Submit your question.</span>
         </p>
       </div>
     </div>
