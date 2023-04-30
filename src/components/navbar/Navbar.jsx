@@ -19,13 +19,23 @@ function Navbar() {
     switch (event.target.id) {
       case "faq":
         navigate("/faq");
+        if (nav === true) {
+          setNav(!nav);
+        }
+
         break;
       case "login":
         navigate("/login");
+        if (nav === true) {
+          setNav(!nav);
+        }
 
         break;
       case "signup":
         navigate("/signup");
+        if (nav === true) {
+          setNav(!nav);
+        }
 
         break;
       case "logo":
