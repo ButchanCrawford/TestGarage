@@ -96,6 +96,17 @@ form input:focus {
   display: none;
 }
 
+@media screen and (max-width: 1894px) {
+  .hero_text {
+    display: none;
+  }
+  .span_one {
+    display: none;
+  }
+  .span_two {
+    display: none;
+  }
+}
 @media screen and (max-width: 720px) {
   form {
     display: flex;
