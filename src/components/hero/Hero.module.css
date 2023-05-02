@@ -5,6 +5,39 @@
   height: 500px;
 }
 
+.hero_text {
+  position: absolute;
+  margin-top: -400px;
+  display: flex;
+  width: 100%;
+}
+
+.hero_text p {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.span_one {
+  background-color: rgb(120, 23, 212, 0.3);
+  position: absolute;
+  width: 206px;
+  height: 20px;
+  margin-top: -382px;
+  margin-left: 848px;
+}
+
+.span_two {
+  background-color: rgba(9, 199, 246, 0.3);
+  position: absolute;
+  width: 206px;
+  height: 20px;
+  margin-top: -362px;
+  margin-left: 848px;
+}
+
 form {
   display: flex;
   justify-content: space-between;
@@ -116,6 +149,16 @@ form input:focus {
   }
 
   .icon {
+    display: none;
+  }
+
+  .hero_text {
+    display: none;
+  }
+  .span_one {
+    display: none;
+  }
+  .span_two {
     display: none;
   }
 }

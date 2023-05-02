@@ -82,9 +82,7 @@ function Navbar() {
               Sign up
             </a>
           </li>
-          <li>
-            <AiOutlineSearch size={25} className={styles.icons} />
-          </li>
+
           <li>
             <AiOutlineUser size={25} className={styles.icons} />
           </li>

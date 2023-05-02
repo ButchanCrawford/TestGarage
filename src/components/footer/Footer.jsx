@@ -2,8 +2,13 @@ import React from "react";
 import styles from "./Footer.module.css";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+  function navSignUp() {
+    navigate("/login");
+  }
   return (
     <div className={styles.footer}>
       <div className={styles.container}>
@@ -24,7 +29,7 @@ function Footer() {
             <IoIosMail size={34} className={styles.icon} />
           </a>
         </div>
-        <button>Sign up</button>
+        <button onClick={navSignUp}>Sign up</button>
       </div>
     </div>
   );
