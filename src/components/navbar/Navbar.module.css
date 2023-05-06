@@ -9,6 +9,11 @@
   color: black;
 }
 
+.navbar a {
+  font-size: 1rem;
+  color: black;
+}
+
 .logo_container {
   display: flex;
   cursor: pointer;
@@ -30,11 +35,6 @@
 
 .menu li {
   padding: 1rem;
-}
-
-.navbar a {
-  font-size: 1rem;
-  color: black;
 }
 
 .navbar a:hover {
